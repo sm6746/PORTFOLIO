@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Github, Star } from 'lucide-react';
 import { useScrollAnimation } from '@/hooks/use-scroll-animation';
 import { useState } from 'react';
-/*import { ALL } from 'dns';*/
+/*import { ALL } from 'dns';/**/ */s
 /*import { table } from 'console';*/
 
 export function ProjectsSection() {
