@@ -47,19 +47,6 @@ export function ExperienceSection() {
       gradient: 'from-green-500 via-emerald-500 to-teal-500',
       bgGradient: 'from-green-50 to-emerald-50 dark:from-green-950/50 dark:to-emerald-950/50',
     },
-    {
-      title: 'AIML',
-      company: 'EDUNET FOUNDATION',
-      period: 'Oct 2024 - Dec 2024',
-      description: 'Validated and trained TensorFlow CNN models on agricultural datasets to accurately detect crop diseases and provide real-time treatment suggestions for sustainable farming practices.',
-      achievements: ['Validated CNN predictions on agricultural data and documented model feedback for sustainable farming use cases',
-                      'Trained a TensorFlow CNN model on agricultural datasets to identify disease patterns with high accuracy',
-                      'Delivered real-time feedback and treatment suggestions, supporting sustainable farming practices through proactive disease management',
-      ],
-      tags: ['Python', 'TensorFlow', 'CNN'],
-      gradient: 'from-orange-500 via-emerald-500 to-teal-500',
-      bgGradient: 'from-orange-50 to-emerald-50 dark:from-orange-950/50 dark:to-emerald-950/50',
-    },
     
   ];
 

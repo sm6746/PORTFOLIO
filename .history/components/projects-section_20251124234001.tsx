@@ -5,7 +5,6 @@ import { ExternalLink, Github, Star } from 'lucide-react';
 import { useScrollAnimation } from '@/hooks/use-scroll-animation';
 import { useState } from 'react';
 import { ALL } from 'dns';
-import { table } from 'console';
 
 export function ProjectsSection() {
   const { ref, isVisible } = useScrollAnimation();
@@ -13,17 +12,17 @@ export function ProjectsSection() {
 
   const projects = [
     {
-      title: ' Multi-Modal Real-Time Pose Estimation',
-      description: 'A GPU-accelerated human pose estimation model using RGB + LiDAR data for accurate, real-time detection of 2D and 3D keypoints, including feet and hands.',
+      title: 'm',
+      description: 'Full-stack e-commerce solution with payment integration, admin dashboard, and real-time inventory management.',
       image: '/assets/images/default.svg',
-      tags: ['Python', 'TensorFlow', 'OpenCV', 'LiDAR'],
+      tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
       category: 'Full Stack',
       gradient: 'from-blue-500 via-cyan-500 to-teal-500',
-      github: 'https://github.com/sm6746/pose-estimation',
+      github: '#',
       /*demo: '#',*/
     },
     {
-      title: 'Portfolio Website',
+      title: 'Social Media Dashboard',
       description: 'A good portfolio helps you stand out by showing your experience beyond your resume.',
       image: '/assets/images/default.svg',
       tags: ['Next.js', 'TypeScript', 'html', 'React'],
@@ -46,7 +45,7 @@ export function ProjectsSection() {
       title: 'WorkStock Analysis Dashboard',
       description: 'An advanced HR analytics dashboard powered by Python and Tableau, designed to provide deep insights into employee attrition and workforce demographics.',
       image: '/assets/images/default.svg',
-      tags: ['python', 'tableau'],
+      tags: ['React', 'Tailwind', 'OpenWeather API'],
       category: 'Frontend',
       gradient: 'from-orange-500 via-amber-500 to-yellow-500',
       github: 'https://github.com/sm6746/WorkStock-Portfolio',

@@ -16,14 +16,14 @@ export function ProjectsSection() {
       title: ' Multi-Modal Real-Time Pose Estimation',
       description: 'A GPU-accelerated human pose estimation model using RGB + LiDAR data for accurate, real-time detection of 2D and 3D keypoints, including feet and hands.',
       image: '/assets/images/default.svg',
-      tags: ['Python', 'TensorFlow', 'OpenCV', 'LiDAR'],
+      tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
       category: 'Full Stack',
       gradient: 'from-blue-500 via-cyan-500 to-teal-500',
       github: 'https://github.com/sm6746/pose-estimation',
       /*demo: '#',*/
     },
     {
-      title: 'Portfolio Website',
+      title: 'Social Media Dashboard',
       description: 'A good portfolio helps you stand out by showing your experience beyond your resume.',
       image: '/assets/images/default.svg',
       tags: ['Next.js', 'TypeScript', 'html', 'React'],

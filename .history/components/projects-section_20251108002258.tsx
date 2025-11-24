@@ -4,8 +4,6 @@ import { Button } from '@/components/ui/button';
 import { ExternalLink, Github, Star } from 'lucide-react';
 import { useScrollAnimation } from '@/hooks/use-scroll-animation';
 import { useState } from 'react';
-import { ALL } from 'dns';
-import { table } from 'console';
 
 export function ProjectsSection() {
   const { ref, isVisible } = useScrollAnimation();
@@ -13,64 +11,64 @@ export function ProjectsSection() {
 
   const projects = [
     {
-      title: ' Multi-Modal Real-Time Pose Estimation',
-      description: 'A GPU-accelerated human pose estimation model using RGB + LiDAR data for accurate, real-time detection of 2D and 3D keypoints, including feet and hands.',
+      title: 'E-Commerce Platform',
+      description: 'Full-stack e-commerce solution with payment integration, admin dashboard, and real-time inventory management.',
       image: '/assets/images/default.svg',
-      tags: ['Python', 'TensorFlow', 'OpenCV', 'LiDAR'],
+      tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
       category: 'Full Stack',
       gradient: 'from-blue-500 via-cyan-500 to-teal-500',
-      github: 'https://github.com/sm6746/pose-estimation',
-      /*demo: '#',*/
+      github: '#',
+      demo: '#',
     },
     {
-      title: 'Portfolio Website',
-      description: 'A good portfolio helps you stand out by showing your experience beyond your resume.',
+      title: 'Social Media Dashboard',
+      description: 'Analytics dashboard for social media metrics with beautiful charts and real-time data updates.',
       image: '/assets/images/default.svg',
-      tags: ['Next.js', 'TypeScript', 'html', 'React'],
-      category: 'Full Stack',
+      tags: ['Next.js', 'TypeScript', 'Chart.js', 'PostgreSQL'],
+      category: 'Frontend',
       gradient: 'from-purple-500 via-pink-500 to-rose-500',
       github: '#',
       demo: '#',
     },
     {
-      title: 'Plant Disease Detector',
+      title: 'Task Management API',
       description: 'RESTful API with authentication, role-based access control, and comprehensive documentation.',
       image: '/assets/images/default.svg',
-      tags: ['pandas', 'matplotlib', 'scikit_learn', 'tensorflow', 'keras'],
-      category: 'ALL',
+      tags: ['NestJS', 'PostgreSQL', 'JWT', 'Swagger'],
+      category: 'Backend',
       gradient: 'from-green-500 via-emerald-500 to-teal-500',
-      github: 'https://github.com/sm6746/PlantDiseaseDetector',
-      
+      github: '#',
+      demo: '#',
     },
     {
-      title: 'WorkStock Analysis Dashboard',
-      description: 'An advanced HR analytics dashboard powered by Python and Tableau, designed to provide deep insights into employee attrition and workforce demographics.',
+      title: 'Weather Forecast App',
+      description: 'Beautiful weather application with location search, 7-day forecast, and interactive maps.',
       image: '/assets/images/default.svg',
-      tags: ['python', 'tableau'],
+      tags: ['React', 'Tailwind', 'OpenWeather API'],
       category: 'Frontend',
       gradient: 'from-orange-500 via-amber-500 to-yellow-500',
-      github: 'https://github.com/sm6746/WorkStock-Portfolio',
+      github: '#',
       demo: '#',
     },
     {
       title: 'Climate Action Pledge Microsite',
-      description: 'Developed a Climate Action Pledge microsite enabling users to take eco-friendly pledges, earn instant digital certificates, and inspire others through a live public Pledge Wall and community impact metrics',
+      description: 'Developed a **Climate Action Pledge microsite** enabling users to take eco-friendly pledges, earn instant digital certificates, and inspire others through a live public Pledge Wall and community impact metrics',
       image: '/assets/images/default.svg',
-      tags: ['Next.js', 'CSS', 'HTML', 'React'],
+      tags: ['Next.js', 'Prisma', 'PostgreSQL', 'MDX'],
       category: 'Full Stack',
       gradient: 'from-indigo-500 via-purple-500 to-pink-500',
-      github: 'https://github.com/sm6746/climate-pledge',
-      demo: 'https://climate-pledge-six.vercel.app/',
+      github: '#',
+      demo: '#',
     },
     {
-      title: 'Local Job Listings App',
-      description: 'A React Native mobile application built with Expo for browsing and managing local job listings. The app provides a seamless experience for job seekers to discover, view, and bookmark job opportunities in their area.',
+      title: 'Portfolio Generator',
+      description: 'SaaS platform for creating customizable portfolios with drag-and-drop interface.',
       image: '/assets/images/default.svg',
-      tags: ['React', 'Express',  'TypeScript'],
-      category: 'Frontend',
+      tags: ['React', 'Express', 'MongoDB', 'AWS S3'],
+      category: 'Full Stack',
       gradient: 'from-red-500 via-pink-500 to-purple-500',
-      github: 'https://github.com/sm6746/Jobs_dashboard',
-      demo: 'https://climate-pledge-six.vercel.app/',
+      github: '#',
+      demo: '#',
     },
   ];
 
@@ -155,19 +153,21 @@ export function ProjectsSection() {
                     ))}
                   </div>
                   <div className="flex gap-3">
-                    
-                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex-1">
-                      <Button
+                    <Button
                       variant="outline"
-                        size="sm"
-                        className="w-full border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transform hover:scale-105 transition-all duration-300 font-bold"
-                      >
-                        <Github className="h-5 w-5 mr-2" />
-                        Code
-                      </Button>
-                    </a>
-
-                    
+                      size="sm"
+                      className="flex-1 border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transform hover:scale-105 transition-all duration-300 font-bold"
+                    >
+                      <Github className="h-5 w-5 mr-2" />
+                      Code
+                    </Button>
+                    <Button
+                      size="sm"
+                      className="flex-1 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 hover:from-blue-700 hover:via-purple-700 hover:to-pink-700 transform hover:scale-105 transition-all duration-300 font-bold shadow-lg glow-purple"
+                    >
+                      <ExternalLink className="h-5 w-5 mr-2" />
+                      Demo
+                    </Button>
                   </div>
                 </CardContent>
               </Card>

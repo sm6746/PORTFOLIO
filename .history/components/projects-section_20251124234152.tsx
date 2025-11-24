@@ -23,7 +23,7 @@ export function ProjectsSection() {
       /*demo: '#',*/
     },
     {
-      title: 'Portfolio Website',
+      title: 'Social Media Dashboard',
       description: 'A good portfolio helps you stand out by showing your experience beyond your resume.',
       image: '/assets/images/default.svg',
       tags: ['Next.js', 'TypeScript', 'html', 'React'],

@@ -5,7 +5,6 @@ import { ExternalLink, Github, Star } from 'lucide-react';
 import { useScrollAnimation } from '@/hooks/use-scroll-animation';
 import { useState } from 'react';
 import { ALL } from 'dns';
-import { table } from 'console';
 
 export function ProjectsSection() {
   const { ref, isVisible } = useScrollAnimation();
@@ -13,21 +12,21 @@ export function ProjectsSection() {
 
   const projects = [
     {
-      title: ' Multi-Modal Real-Time Pose Estimation',
-      description: 'A GPU-accelerated human pose estimation model using RGB + LiDAR data for accurate, real-time detection of 2D and 3D keypoints, including feet and hands.',
+      title: 'E-Commerce Platform',
+      description: 'Full-stack e-commerce solution with payment integration, admin dashboard, and real-time inventory management.',
       image: '/assets/images/default.svg',
-      tags: ['Python', 'TensorFlow', 'OpenCV', 'LiDAR'],
+      tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
       category: 'Full Stack',
       gradient: 'from-blue-500 via-cyan-500 to-teal-500',
-      github: 'https://github.com/sm6746/pose-estimation',
-      /*demo: '#',*/
+      github: '#',
+      demo: '#',
     },
     {
-      title: 'Portfolio Website',
-      description: 'A good portfolio helps you stand out by showing your experience beyond your resume.',
+      title: 'Social Media Dashboard',
+      description: 'Analytics dashboard for social media metrics with beautiful charts and real-time data updates.',
       image: '/assets/images/default.svg',
-      tags: ['Next.js', 'TypeScript', 'html', 'React'],
-      category: 'Full Stack',
+      tags: ['Next.js', 'TypeScript', 'Chart.js', 'PostgreSQL'],
+      category: 'Frontend',
       gradient: 'from-purple-500 via-pink-500 to-rose-500',
       github: '#',
       demo: '#',
@@ -40,16 +39,16 @@ export function ProjectsSection() {
       category: 'ALL',
       gradient: 'from-green-500 via-emerald-500 to-teal-500',
       github: 'https://github.com/sm6746/PlantDiseaseDetector',
-      
+      demo: 'command-playground.vercel.app',
     },
     {
-      title: 'WorkStock Analysis Dashboard',
-      description: 'An advanced HR analytics dashboard powered by Python and Tableau, designed to provide deep insights into employee attrition and workforce demographics.',
+      title: 'Weather Forecast App',
+      description: 'Beautiful weather application with location search, 7-day forecast, and interactive maps.',
       image: '/assets/images/default.svg',
-      tags: ['python', 'tableau'],
+      tags: ['React', 'Tailwind', 'OpenWeather API'],
       category: 'Frontend',
       gradient: 'from-orange-500 via-amber-500 to-yellow-500',
-      github: 'https://github.com/sm6746/WorkStock-Portfolio',
+      github: '#',
       demo: '#',
     },
     {
@@ -167,7 +166,13 @@ export function ProjectsSection() {
                       </Button>
                     </a>
 
-                    
+                    <Button
+                      size="sm"
+                      className="flex-1 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 hover:from-blue-700 hover:via-purple-700 hover:to-pink-700 transform hover:scale-105 transition-all duration-300 font-bold shadow-lg glow-purple"
+                    >
+                      <ExternalLink className="h-5 w-5 mr-2" />
+                      Demo
+                    </Button>
                   </div>
                 </CardContent>
               </Card>

@@ -48,17 +48,16 @@ export function ExperienceSection() {
       bgGradient: 'from-green-50 to-emerald-50 dark:from-green-950/50 dark:to-emerald-950/50',
     },
     {
-      title: 'AIML',
-      company: 'EDUNET FOUNDATION',
-      period: 'Oct 2024 - Dec 2024',
-      description: 'Validated and trained TensorFlow CNN models on agricultural datasets to accurately detect crop diseases and provide real-time treatment suggestions for sustainable farming practices.',
-      achievements: ['Validated CNN predictions on agricultural data and documented model feedback for sustainable farming use cases',
-                      'Trained a TensorFlow CNN model on agricultural datasets to identify disease patterns with high accuracy',
-                      'Delivered real-time feedback and treatment suggestions, supporting sustainable farming practices through proactive disease management',
+      title: 'Front-end Web Development',
+      company: 'internship with Suvidha Foundation',
+      period: 'Aug 2025 - Sep 2025',
+      description: 'Completed a 1‐month online Front-end Web Development & Fundraising internship with Suvidha Foundation, where I collaborated with their team to build responsive user-interfaces',
+      achievements: [
+        'Gained practical experience working remotely on a real-world NGO project: developed interactive UI components, debugged cross-browser issues, and contributed to outreach efforts that raised funds for community-driven initiatives',
       ],
-      tags: ['Python', 'TensorFlow', 'CNN'],
-      gradient: 'from-orange-500 via-emerald-500 to-teal-500',
-      bgGradient: 'from-orange-50 to-emerald-50 dark:from-orange-950/50 dark:to-emerald-950/50',
+      tags: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+      gradient: 'from-green-500 via-emerald-500 to-teal-500',
+      bgGradient: 'from-green-50 to-emerald-50 dark:from-green-950/50 dark:to-emerald-950/50',
     },
     
   ];
